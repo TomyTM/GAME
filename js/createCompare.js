@@ -42,6 +42,8 @@ function turnoJugador(x) {
     {
       $("#juego").hide();
       $("#gameOver").show();
+      $("#counterNumberGameOver").html(contadorGameOver);
+
       limpiarPartida(game);
     }
   } else {

@@ -9,14 +9,22 @@ $(document).ready(function() {
   //$("#counterNumber").toggleClass("colorText");
 });
 
+var contadorGameOver = 0;
+
 var game = {
   contador: 0,
-  contadorGamew: 0,
   botones: ["#grey", "#blue", "#red", "#yellow"],
   partida: [],
   jugador: [],
   melodia: [
     new Audio("https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"),
+    new Audio("https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"),
+    new Audio("https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"),
+    new Audio("https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"),
+    new Audio("https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"),
+    new Audio("https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"),
+    new Audio("https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"),
+    new Audio("https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"),
     new Audio("https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"),
     new Audio("https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"),
     new Audio("https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"),
@@ -37,6 +45,7 @@ var game = {
 function limpiarPartida(game) {
   game.partida = [];
   game.contador = 0;
+  contadorGameOver = 0;
   addCount();
 }
 
@@ -69,12 +78,14 @@ function addCount() {
   $("#counterNumber").toggleClass("colorText");
   console.log(contador);
   game.contador++;
+  contadorGameOver++;
+  console.log("counterNumberGameOver" + contadorGameOver)
 
-  console.log(contador);
 
   setTimeout(function() {
     $("#counterNumber").toggleClass("colorText");
     $("#counterNumber").html(game.contador);
+    
   }, 200);
 
   nuevoMovimiento();

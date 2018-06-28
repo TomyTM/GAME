@@ -280,7 +280,9 @@ h5 {
 
 hr {
   padding-bottom: 50px;
-  line-height: 10px;
+  border-width: 7.5px;
+  border-color: #000000;
+
 }
 
 .colorText {
