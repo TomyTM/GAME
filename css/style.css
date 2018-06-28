@@ -1,25 +1,336 @@
-#red {
-
-    background-color: red;
-    height: 200px;
+body {
+  background-color: #888888;
 }
 
-#blue {
-
-    background-color: blue;
-    height: 200px;
+.col-12 {
+  padding: 0px;
 }
 
-#yellow {
-
-    background-color: yellow;
-    height: 200px;
+.col-8 {
+  padding: 0px;
 }
 
-
-#green {
-
-    background-color: green;
-    height: 200px;
+.col-8 {
+  padding: 0px;
 }
 
+.col-6 {
+  padding: 0px;
+}
+
+.col-4 {
+  padding: 0px;
+}
+
+.col-3 {
+  padding: 0px;
+}
+
+#areaBoton {
+  height: 150px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+#botonTry {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#nivelGameOver {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#textoNivel {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#contador {
+  height: 300px;
+  padding: 30px;
+  text-align: right;
+}
+
+h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 4em;
+  color: #000000;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 60px;
+}
+
+h2 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  color: #000000;
+}
+h4 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  color: #ffffff;
+}
+
+h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 10em;
+  font-weight: bold;
+  color: #000000;
+}
+
+h5 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 6em;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.container {
+  width: 800px;
+  padding: 0px;
+}
+
+#juego {
+  width: 800px;
+}
+
+#fail {
+  width: 800px;
+}
+
+#gameOver {
+  height: 600px;
+  width: 800px;
+  background-color: black;
+}
+
+.gameOver {
+  height: 600px;
+  width: 800px;
+}
+.row {
+  margin: 0px;
+}
+
+.btn {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: #000000;
+  font-size: 22px;
+  width: 160px;
+  background: #ffffff;
+  padding: 10px 20px 10px 20px;
+  border: solid #000000 15px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  color: #ffffff;
+  background: #000000;
+  text-decoration: none;
+}
+
+.botonJuego {
+}
+
+#casilla1 {
+  border-width: 15px 7.5px 7.5px 15px !important;
+  border-color: black !important;
+  border-style: solid !important;
+  height: 200px !important;
+}
+
+#casilla2 {
+  background-color: white;
+  height: 200px !important;
+  border-width: 15px 7.5px 7.5px 7.5px !important;
+  border-color: black !important;
+  border-style: solid !important;
+}
+
+#casilla3 {
+  background-color: white;
+  height: 200px !important;
+  border-width: 7.5px 7.5px 7.5px 15px !important;
+  border-color: black !important;
+  border-style: solid !important;
+}
+
+#casilla4 {
+  height: 200px !important;
+  border-width: 7.5px 7.5px 15px 15px !important;
+  border-color: black !important;
+  border-style: solid !important;
+}
+
+#casilla5 {
+  height: 200px;
+  border-width: 15px 15px 7.5px 7.5px !important;
+  border-color: black !important;
+  border-style: solid;
+}
+
+#casilla6 {
+  border-width: 7.5px 15px 15px 7.5px !important;
+  border-color: black !important;
+  border-style: solid !important;
+  height: 400px;
+}
+
+#lienzo {
+  margin-right: 0px;
+}
+
+/* Botones*/
+
+.red {
+  background-color: #ff0000;
+
+  width: 100%;
+  height: 100%;
+}
+
+.blue {
+  background-color: #0000ff;
+
+  width: 100%;
+  height: 100%;
+}
+
+.blue_active {
+  background-color: #0000ff50 !important;
+  -webkit-box-shadow: 0px -1px 3px 12px #0000ff;
+  -moz-box-shadow: 0px -1px 3px 12px #0000ff;
+  box-shadow: 0px -1px 3px 12px #0000ff;
+}
+
+.blue:active {
+  background-color: #0000ff50 !important;
+  -webkit-box-shadow: 0px -1px 3px 12px #0000ff;
+  -moz-box-shadow: 0px -1px 3px 12px #0000ff;
+  box-shadow: 0px -1px 3px 12px #0000ff;
+}
+
+.yellow {
+  background-color: #ffff00;
+  padding: 20px;
+
+  width: 100%;
+  height: 100%;
+}
+
+.yellow_active {
+  background-color: #ffff0050 !important;
+  -webkit-box-shadow: 0px -1px 3px 12px #ffff00;
+  -moz-box-shadow: 0px -1px 3px 12px #ffff00;
+  box-shadow: 0px -1px 3px 12px #ffff00;
+}
+.yellow:active {
+  background-color: #ffff0050 !important;
+  -webkit-box-shadow: 0px -1px 3px 12px #ffff00;
+  -moz-box-shadow: 0px -1px 3px 12px #ffff00;
+  box-shadow: 0px -1px 3px 12px #ffff00;
+}
+
+.grey {
+  background-color: #aaaaaa;
+
+  width: 100%;
+  height: 100%;
+}
+
+.grey_active {
+  background-color: #aaaaaa50 !important;
+  -webkit-box-shadow: 0px -1px 3px 12px #aaaaaa;
+  -moz-box-shadow: 0px -1px 3px 12px #aaaaaa;
+  box-shadow: 0px -1px 3px 12px #aaaaaa;
+}
+
+.grey:active {
+  background-color: #aaaaaa50 !important;
+  -webkit-box-shadow: 0px -1px 3px 12px #aaaaaa;
+  -moz-box-shadow: 0px -1px 3px 12px #aaaaaa;
+  box-shadow: 0px -1px 3px 12px #aaaaaa;
+}
+
+.red:active {
+  background-color: #ff000050 !important;
+  -webkit-box-shadow: 0px -1px 3px 12px #ff0000;
+  -moz-box-shadow: 0px -1px 3px 12px #ff0000;
+  box-shadow: 0px -1px 3px 12px #ff0000;
+}
+
+.red_active {
+  background-color: #ff000050 !important;
+  -webkit-box-shadow: 0px -1px 3px 12px #ff0000;
+  -moz-box-shadow: 0px -1px 3px 12px #ff0000;
+  box-shadow: 0px -1px 3px 12px #ff0000;
+}
+
+hr {
+  padding-bottom: 50px;
+  line-height: 10px;
+}
+
+.colorText {
+  -webkit-animation: colorchange 200ms infinite alternate;
+}
+
+@-webkit-keyframes colorchange {
+  0% {
+    color: black;
+  }
+
+  20% {
+    color: red;
+  }
+
+  40% {
+    color: grey;
+  }
+
+  60% {
+    color: yellow;
+  }
+
+  80% {
+    color: blue;
+  }
+
+  100% {
+    color: black;
+  }
+}
+
+.btn_try {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 22px;
+  width: 160px;
+  background: #000000;
+  padding: 10px 20px 10px 20px;
+  border: solid #ffffff 15px;
+  text-decoration: none;
+}
+
+.btn_try:hover {
+  color: #000000;
+  background: #ffffff;
+  text-decoration: none;
+}
+
+#over {
+  padding-top: 160px;
+}

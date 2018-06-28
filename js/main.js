@@ -1,27 +1,81 @@
-var secuencia = Array.from({ length: 3 }, () => Math.floor(Math.random() * 4));
-console.log(secuencia);
+$(document).ready(function() {
+  //$(".green-pepper").hide();
+  //$(".mushroom").hide();
+  //$(".pep").hide();
+  $("#juego").show();
+  $("#gameOver").hide();
+  $("#counterNumber").removeClass("colorText");
 
-function gameOver() {
-  alert("Giorgio es un paquete");
-}
+  //$("#counterNumber").toggleClass("colorText");
+});
 
-function createSecuencia() {
-  var counter = 0;
-  var steps = [];
-  for (i = 0; i < secuencia.length; i++) {
-    for (j = 0; j < i; j++) {}
-    steps.push(secuencia[i]);
-    console.log(steps);
-    var sign = prompt("inserta" + steps);
-    if (sign == steps) {
-      alert("Pasas de nivel");
-      counter++;
-      console.log("Contador" + counter);
-    } else {
-      gameOver();
-      return false;
-    }
+var game = {
+  contador: 0,
+  contadorGamew: 0,
+  botones: ["#grey", "#blue", "#red", "#yellow"],
+  partida: [],
+  jugador: [],
+  melodia: [
+    new Audio("https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"),
+    new Audio("https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"),
+    new Audio("https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"),
+    new Audio("https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"),
+    new Audio("https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"),
+    new Audio("https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"),
+    new Audio("https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"),
+    new Audio("https://s3.amazonaws.com/freecodecamp/simonSound4.mp3")
+  ],
+
+  sonidos: {
+    grey: new Audio("https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"),
+    blue: new Audio("https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"),
+    red: new Audio("https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"),
+    yellow: new Audio("https://s3.amazonaws.com/freecodecamp/simonSound4.mp3")
   }
+};
+
+function limpiarPartida(game) {
+  game.partida = [];
+  game.contador = 0;
+  addCount();
 }
 
-createSecuencia();
+function nuevaPartida(game) {
+  limpiarPartida(game);
+  $("#juego").show();
+  $("#gameOver").hide();
+}
+
+function playGame(categoria) {
+  $(categoria).addClass(categoria.replace("#", "") + "_active");
+
+  game.melodia[j].play();
+  console.log(j);
+  //game.sonidos[categoria.replace("#", "")].play();
+  setTimeout(function() {
+    $(categoria).removeClass(categoria.replace("#", "") + "_active");
+  }, 100);
+}
+
+function limpiarJugador() {
+  game.jugador = [];
+}
+
+function sumaNivel() {
+  addCount();
+}
+
+function addCount() {
+  $("#counterNumber").toggleClass("colorText");
+  console.log(contador);
+  game.contador++;
+
+  console.log(contador);
+
+  setTimeout(function() {
+    $("#counterNumber").toggleClass("colorText");
+    $("#counterNumber").html(game.contador);
+  }, 200);
+
+  nuevoMovimiento();
+}
