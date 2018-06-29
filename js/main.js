@@ -2,7 +2,7 @@ $(document).ready(function() {
   //$(".green-pepper").hide();
   //$(".mushroom").hide();
   //$(".pep").hide();
-  $("#juego").show();
+  $("#game").show();
   $("#gameOver").hide();
   $("#counterNumber").removeClass("colorText");
 
@@ -16,25 +16,7 @@ var game = {
   botones: ["#grey", "#blue", "#red", "#yellow"],
   partida: [],
   jugador: [],
-  melodia: [
-    new Audio("https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"),
-    new Audio("https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"),
-    new Audio("https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"),
-    new Audio("https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"),
-    new Audio("https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"),
-    new Audio("https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"),
-    new Audio("https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"),
-    new Audio("https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"),
-    new Audio("https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"),
-    new Audio("https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"),
-    new Audio("https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"),
-    new Audio("https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"),
-    new Audio("https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"),
-    new Audio("https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"),
-    new Audio("https://s3.amazonaws.com/freecodecamp/simonSound4.mp3")
-  ],
-
-  sonidos: {
+  melodia: {
     grey: new Audio("https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"),
     blue: new Audio("https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"),
     red: new Audio("https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"),
@@ -51,16 +33,16 @@ function limpiarPartida(game) {
 
 function nuevaPartida(game) {
   limpiarPartida(game);
-  $("#juego").show();
+  $("#game").show();
   $("#gameOver").hide();
 }
 
 function playGame(categoria) {
   $(categoria).addClass(categoria.replace("#", "") + "_active");
 
-  game.melodia[j].play();
+  //game.melodia[j].play();
   console.log(j);
-  //game.sonidos[categoria.replace("#", "")].play();
+  game.melodia[categoria.replace("#", "")].play();
   setTimeout(function() {
     $(categoria).removeClass(categoria.replace("#", "") + "_active");
   }, 100);
@@ -76,16 +58,12 @@ function sumaNivel() {
 
 function addCount() {
   $("#counterNumber").toggleClass("colorText");
-  console.log(contador);
   game.contador++;
   contadorGameOver++;
-  console.log("counterNumberGameOver" + contadorGameOver)
-
 
   setTimeout(function() {
     $("#counterNumber").toggleClass("colorText");
     $("#counterNumber").html(game.contador);
-    
   }, 200);
 
   nuevoMovimiento();

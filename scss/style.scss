@@ -1,0 +1,34 @@
+@import "_movil";
+@import "desktop";
+
+/* Botones */
+
+.colorText {
+  -webkit-animation: colorchange 200ms infinite alternate;
+}
+
+@-webkit-keyframes colorchange {
+  0% {
+    color: black;
+  }
+
+  20% {
+    color: red;
+  }
+
+  40% {
+    color: grey;
+  }
+
+  60% {
+    color: yellow;
+  }
+
+  80% {
+    color: blue;
+  }
+
+  100% {
+    color: black;
+  }
+}

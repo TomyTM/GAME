@@ -1,0 +1,262 @@
+@media (max-width: 992px) {
+  body {
+    font-size: 10px;
+    overflow-y: hidden;
+    padding: 0px;
+    background-color: black;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  .container .row {
+    align-items: center;
+  }
+  .row {
+    padding: 0px;
+    margin: 0px;
+  }
+  .col-md-12 {
+    padding: 0px;
+  }
+  .container {
+    padding: 0px;
+  }
+
+  .white01 {
+    background-color: white;
+    min-height: 20vh;
+  }
+
+  .white02 {
+    background-color: white;
+    min-height: 20vh;
+  }
+
+  .red {
+    background-color: red;
+    min-height: 20vh;
+  }
+
+  .grey {
+    background-color: grey;
+    min-height: 20vh;
+  }
+
+  .blue {
+    background-color: blue;
+    min-height: 20vh;
+  }
+
+  .yellow {
+    background-color: yellow;
+    min-height: 20vh;
+  }
+  hr {
+    display: none;
+  }
+  /*Contenedores*/
+
+  #titulo {
+    min-height: 10vh;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+  }
+
+  #titulo h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    text-align: center;
+  }
+
+  #game {
+    min-height: 80vh;
+    background-color: black;
+  }
+
+  #userX {
+    min-height: 10vh;
+    display: flex;
+  }
+  #titulo .row {
+    height: 10vh;
+    align-items: center;
+  }
+  .boton {
+    min-height: 10vh;
+  }
+
+  #gameOver {
+    min-height: 80vh;
+    background-color: black;
+  }
+
+  .gameOver {
+    min-height: 80vh;
+  }
+
+  #over {
+    padding-top: 70px;
+  }
+
+  #nivelGameOver {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #areaBoton {
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  #textoNivel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #contador {
+    height: 300px;
+    padding: 30px;
+    text-align: right;
+  }
+
+  /*Type*/
+
+  h2 {
+    display: none;
+  }
+
+  h4 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  h3 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+  h6 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 10rem;
+    font-weight: bold;
+    color: white;
+  }
+
+  h5 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  .btn {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: #000000;
+    font-size: 1rem;
+    width: 100%;
+    background: #ffffff;
+    padding: 5px 10px 5px 10px;
+    border: solid #000000 15px;
+    text-decoration: none;
+  }
+
+  .btn:hover {
+    color: #ffffff;
+    background: #000000;
+    text-decoration: none;
+  }
+  #botonTry {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+  }
+
+  .btn_try {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 1rem;
+    width: 120px;
+    background: #000000;
+    padding: 10px 20px 10px 20px;
+    border: solid #ffffff 4px;
+    text-decoration: none;
+  }
+
+  .btn_try:hover {
+    color: #000000;
+    background: #ffffff;
+    text-decoration: none;
+  }
+
+  /* Luces */
+  .blue_active {
+    background-color: cyan !important;
+    -webkit-box-shadow: inset 1px -1px 49px -4px #0000ff !important;
+    -moz-box-shadow: inset 1px -1px 49px -4px #0000ff !important;
+    box-shadow: inset 1px -1px 49px -4px #0000ff !important;
+    
+  }
+
+  .blue:active {
+    background-color:cyan !important;
+    -webkit-box-shadow: inset 1px -1px 49px -4px #0000ff !important;
+    -moz-box-shadow: inset 1px -1px 49px -4px #0000ff !important;
+    box-shadow: inset 1px -1px 49px -4px #0000ff !important;
+   
+  }
+
+  .yellow_active {
+    background-color: rgb(251, 255, 166) !important;
+    -webkit-box-shadow: inset 1px -1px 49px -4px #ffae00 !important;
+    -moz-box-shadow: inset 1px -1px 49px -4px #ffae00 !important;
+    box-shadow: inset 1px -1px 49px -4px #ffae00 !important;
+  }
+  .yellow:active {
+    background-color: rgb(251, 255, 166) !important;
+    -webkit-box-shadow: inset 1px -1px 49px -4px #ffae00 !important;
+    -moz-box-shadow: inset 1px -1px 49px -4px #ffae00 !important;
+    box-shadow: inset 1px -1px 49px -4px #ffae00 !important;
+  }
+
+  .grey_active {
+    background-color: #bdbdbd !important;
+    -webkit-box-shadow: inset 1px -1px 49px -4px #666666 !important;
+    -moz-box-shadow: inset 1px -1px 49px -4px #666666 !important;
+    box-shadow: inset 1px -1px 49px -4px #666666 !important;
+  }
+
+  .grey:active {
+    background-color: #bdbdbd !important;
+    -webkit-box-shadow: inset 1px -1px 49px -4px #666666 !important;
+    -moz-box-shadow: inset 1px -1px 49px -4px #666666!important;
+    box-shadow: inset 1px -1px 49px -4px #666666!important;
+  }
+
+  .red:active {
+    background-color: rgb(252, 133, 193) !important;
+    -webkit-box-shadow: inset 1px -1px 49px -4px #ff0000d3!important;
+    -moz-box-shadow: inset 1px -1px 49px -4px #ff0000d3!important;
+    box-shadow: inset 1px -1px 49px -4px #ff0000d3!important;
+  }
+
+  .red_active {
+    background-color: rgb(252, 133, 193) !important;
+    -webkit-box-shadow: inset 1px -1px 49px -4px #ff0000d3!important;
+    -moz-box-shadow: inset 1px -1px 49px -4px #ff0000d3!important;
+    box-shadow: inset 1px -1px 49px -4px #ff0000d3!important;
+  }
+}

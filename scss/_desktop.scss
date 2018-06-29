@@ -1,0 +1,308 @@
+@media (min-width: 993px) {
+  body {
+    font-size: 20px;
+    background-color: #888888;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  hr {
+    max-width: 960px;
+    padding-bottom: 50px;
+    border-width: 7.5px;
+    border-color: #000000;
+  }
+
+  .row {
+    padding: 0px;
+    margin: 0px;
+  }
+  .col-lg-12 {
+    padding: 0px;
+  }
+  .col-lg-9 {
+    padding: 0px;
+  }
+  .col-lg-8 {
+    padding: 0px;
+  }
+  .col-lg-4 {
+    padding: 0px;
+  }
+  .col-lg-3 {
+    padding: 0px;
+  }
+
+  .container {
+    padding: 0px;
+  }
+
+  .white01 {
+    background-color: white;
+    min-height: 25vh;
+    border-width: 15px 7.5px 7.5px 7.5px;
+    border-color: black;
+    border-style: solid;
+  }
+
+  .white02 {
+    background-color: white;
+    min-height: 25vh;
+    border-width: 7.5px 7.5px 7.5px 15px;
+    border-color: black;
+    border-style: solid;
+  }
+
+  .red {
+    background-color: red;
+    min-height: 25vh;
+    border-width: 7.5px 7.5px 15px 15px;
+    border-color: black;
+    border-style: solid;
+  }
+
+  .grey {
+    background-color: grey;
+    min-height: 25vh;
+    border-width: 15px 15px 7.5px 7.5px;
+    border-color: black;
+    border-style: solid;
+  }
+
+  .blue {
+    background-color: blue;
+    min-height: 50vh;
+    border-width: 7.5px 15px 15px 7.5px;
+    border-color: black;
+    border-style: solid;
+  }
+
+  .yellow {
+    background-color: yellow;
+    min-height: 25vh;
+    border-width: 15px 7.5px 7.5px 15px;
+    border-color: black;
+    border-style: solid;
+  }
+
+  /*Contenedores*/
+
+  #todo {
+    max-width: 960px;
+  }
+
+  #titulo {
+    min-height: 15vh;
+  }
+
+  #titulo h1 {
+    padding-top: 50px;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+  }
+
+  #game {
+    min-height: 75vh;
+  }
+
+  #userX {
+    min-height: 75vh;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  .boton {
+    min-height: 10vh;
+  }
+
+  .btn {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: #000000;
+    font-size: 22px;
+    width: 160px;
+    background: #ffffff;
+    padding: 10px 20px 10px 20px;
+    border: solid #000000 15px;
+    text-decoration: none;
+  }
+
+  .btn:hover {
+    color: #ffffff;
+    background: #000000;
+    text-decoration: none;
+  }
+
+  .btn_try {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 22px;
+    width: 160px;
+    background: #000000;
+    padding: 10px 20px 10px 20px;
+    border: solid #ffffff 15px;
+    text-decoration: none;
+  }
+
+  .btn_try:hover {
+    color: #000000;
+    background: #ffffff;
+    text-decoration: none;
+  }
+  #over {
+    padding-top: 160px;
+  }
+
+  #nivelGameOver {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #areaBoton {
+    height: 150px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  #botonTry {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  #textoNivel {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  #contador {
+    height: 300px;
+    padding: 30px;
+    text-align: right;
+  }
+
+  /* Type */
+
+  h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 2em;
+    color: #000000;
+    text-align: center;
+  }
+  h4 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 2em;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  h3 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 10rem;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+  }
+
+  h6 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 10rem;
+    font-weight: bold;
+    color: #000000;
+  }
+
+  h5 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 6em;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  /* Botones */
+
+  #areaBoton {
+    height: 150px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  #gameOver {
+    min-height: 75vh;
+    width: 960px;
+    background-color: black;
+  }
+
+  .gameOver {
+    min-height: 75vh;
+    width: 960px;
+    background-color: black;
+  }
+  /* Luces */
+  .blue_active {
+    background-color: cyan !important;
+    -webkit-box-shadow: inset 1px -1px 49px -4px #0000ff !important;
+    -moz-box-shadow: inset 1px -1px 49px -4px #0000ff !important;
+    box-shadow: inset 1px -1px 49px -4px #0000ff !important;
+    
+  }
+
+  .blue:active {
+    background-color:cyan !important;
+    -webkit-box-shadow: inset 1px -1px 49px -4px #0000ff !important;
+    -moz-box-shadow: inset 1px -1px 49px -4px #0000ff !important;
+    box-shadow: inset 1px -1px 49px -4px #0000ff !important;
+   
+  }
+
+  .yellow_active {
+    background-color: white !important;
+    -webkit-box-shadow: inset 1px -1px 49px -4px #CCA100 !important;
+    -moz-box-shadow: inset 1px -1px 49px -4px #CCA100 !important;
+    box-shadow: inset 1px -1px 49px -4px #CCA100 !important;
+  }
+  .yellow:active {
+    background-color: white !important;
+    -webkit-box-shadow: inset 1px -1px 49px -4px #CCA100 !important;
+    -moz-box-shadow: inset 1px -1px 49px -4px #CCA100 !important;
+    box-shadow: inset 1px -1px 49px -4px #CCA100 !important;
+  }
+
+  .grey_active {
+    background-color: white !important;
+    -webkit-box-shadow: inset 1px -1px 49px -4px #666666 !important;
+    -moz-box-shadow: inset 1px -1px 49px -4px #666666 !important;
+    box-shadow: inset 1px -1px 49px -4px #666666 !important;
+  }
+
+  .grey:active {
+    background-color: white !important;
+    -webkit-box-shadow: inset 1px -1px 49px -4px #666666 !important;
+    -moz-box-shadow: inset 1px -1px 49px -4px #666666!important;
+    box-shadow: inset 1px -1px 49px -4px #666666!important;
+  }
+
+  .red:active {
+    background-color: #FF9DA8 !important;
+    -webkit-box-shadow: inset 1px -1px 49px -4px #7F2627!important;
+    -moz-box-shadow: inset 1px -1px 49px -4px #7F2627!important;
+    box-shadow: inset 1px -1px 49px -4px #7F2627!important;
+  }
+
+  .red_active {
+    background-color: #FF9DA8 !important;
+    -webkit-box-shadow: inset 1px -1px 49px -4px #7F2627!important;
+    -moz-box-shadow: inset 1px -1px 49px -4px #7F2627!important;
+    box-shadow: inset 1px -1px 49px -4px #7F2627!important;
+  }
+}

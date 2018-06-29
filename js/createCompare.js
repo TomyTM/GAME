@@ -18,11 +18,9 @@ function muestraMovimiento() {
 var h = 0;
 function addJugador(id) {
   var categoria = "#" + id;
-
-  console.log("valor" + h);
   //if (h = 0;  h < j; h++) console.log(h);
-  game.melodia[h].play();
-  //game.sonidos[categoria.replace("#", "")].play();
+  //game.melodia[h].play();
+  game.melodia[categoria.replace("#", "")].play();
   game.jugador.push(categoria);
 
   turnoJugador(categoria);
@@ -40,7 +38,7 @@ function turnoJugador(x) {
     game.partida[game.jugador.length - 1]
   ) {
     {
-      $("#juego").hide();
+      $("#game").hide();
       $("#gameOver").show();
       $("#counterNumberGameOver").html(contadorGameOver);
 

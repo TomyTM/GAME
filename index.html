@@ -10,87 +10,88 @@
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 
-
-
-
-
 </head>
 
 <body>
-    <div class="container">
-    <h1>IronMEmory</h1>
-    <hr>
-    </div>
-    <div class="container" id="juego">
-
-
+    <div class="row"></div>
+    <div class="container" id="titulo">
         <div class="row">
-            <div class="col-6">
-                <div class="row" id="lienzo">
-                    <div class="col-4" id="casilla1">
-                        <div class="yellow" id="yellow" onClick="addJugador(this.id)"></div>
-                    </div>
-                    <div class="col-8" id="casilla2">
-                    </div>
-                    <div class="col-12" id="casilla3">
-                    </div>
-                    <div class="col-12" id="casilla4">
-                        <div class="red" id="red" onClick="addJugador(this.id)"></div>
+            <div class="col-sm-12">
+                <h1>IRONMEMORY</h1>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div class="container" id="todo">
+        <div class="row" id="game">
+            <div class="col-md-12 col-lg-9">
+                <div class="container" >
+                    <div class="row">
+                        <div class="col-md-12 col-lg-8">
+                            <div class="row">
+
+                                <div class="col-md-12 col-lg-6 yellow" id="yellow" onClick="addJugador(this.id)">
+                                </div>
+                                <div class="d-none d-md-block col-lg-6 white01" id="white01">
+                                </div>
+
+                                <div class="d-none d-md-block col-lg-12 white02" id="white02">
+                                </div>
+
+                                <div class="col-md-12 col-lg-12 red" id="red" onClick="addJugador(this.id)">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-4">
+                            <div class="col-md-12 col-lg-12 grey" id="grey" onClick="addJugador(this.id)">
+                            </div>
+                            <div class="col-md-12 col-lg-12 blue" id="blue" onClick="addJugador(this.id)">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="col-md-12 col-lg-3">
+                <div class="container">
+                    <div class="row d-flex" id="userX">
+                        <div class="col-3 col-lg-12" id="counter">
+                            <h2>LEVEL</h2>
+                            <h3 class="colorText" id="counterNumber">0</h3>
+                        </div>
+                        <div class="col-9 col-lg-12 boton" id="areaBoton">
+                            <input type="button" class="btn" id="start-button" value="Start">
 
-            <div class="col-3">
-                <div class="col-12" id="casilla5">
-                    <div class="grey" id="grey" onClick="addJugador(this.id)"></div>
-                </div>
-                <div class="col-12" id="casilla6">
-                    <div class="blue" id="blue" onClick="addJugador(this.id)"></div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="col-12" id="contador">
-                    <h2>LEVEL</h2>
-                    <h3 class="colorText" id="counterNumber">0</h3>
-                </div>
-                <div class="col-12" id="areaBoton">
-                    <input type="button" class="btn" id="start-button" value="Start">
-                </div>
-
-                <div class="col-12" id="areaBoton">
-                    <input type="button" class="btn" id="reset-button" value="Reset">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="container" id="gameOver">
 
+            <div class="row" id="over">
+                <div class="col-12">
+                    <h5>GAMEOVER</h5>
 
+                </div>
+                <div class="col-md-12 col-lg-4" id="textoNivel">
+                    <h4 color="white">TU NIVEL</h4>
+                </div>
 
-    <div class="container" id="gameOver">
-
-        <div class="row" id="over">
-            <div class="col-12">
-                <h5>GAMEOVER</h5>
-
-            </div>
-            <div class="col-4" id="textoNivel">
-                <h4 color="white">TU NIVEL</h4>
-            </div>
-
-            <div class="col-4" id="nivelGameOver">
-                <h3 class="colorText" id="counterNumberGameOver">0</h3>
-            </div>
-            <div class="col-4" id="botonTry">
-                <input type="button" class="btn_try" id="try-again" value="Try again">
+                <div class="col-md-12 col-lg-4" id="nivelGameOver">
+                    <h6 class="colorText" id="counterNumberGameOver">0</h6>
+                </div>
+                <div class="col-md-12col-lg-4" id="botonTry">
+                    <input type="button" class="btn_try" id="try-again" value="Try again">
+                </div>
             </div>
         </div>
-    </div>
 
+    </div>
 </body>
+<script src="./js/audio.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="./js/createCompare.js"></script>
 <script src="./js/botones.js"></script>
 <script src="./js/main.js"></script>
-
 
 </html>
