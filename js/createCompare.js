@@ -9,7 +9,7 @@ function muestraMovimiento() {
     if (i >= game.partida.length) {
       clearInterval(moves);
     }
-  }, 500);
+  }, 800);
   j = 0;
 
   limpiarJugador();

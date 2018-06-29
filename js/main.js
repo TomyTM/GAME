@@ -45,7 +45,7 @@ function playGame(categoria) {
   game.melodia[categoria.replace("#", "")].play();
   setTimeout(function() {
     $(categoria).removeClass(categoria.replace("#", "") + "_active");
-  }, 100);
+  }, 500);
 }
 
 function limpiarJugador() {
@@ -64,7 +64,7 @@ function addCount() {
   setTimeout(function() {
     $("#counterNumber").toggleClass("colorText");
     $("#counterNumber").html(game.contador);
-  }, 200);
+  }, 600);
 
   nuevoMovimiento();
 }
